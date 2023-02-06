@@ -12,9 +12,9 @@ public class App {
         pollObj(worker);
         pollObj(drone);
 
-        // Das sollte eigentlich nicht gehen!
-        HoneyBee bee = new HoneyBee();
-        output(bee.doYourJob());
+        // Das sollte eigentlich nicht gehen! Jetzt gibt es eine Fehlermeldung, da Klasse abstract.
+        // HoneyBee bee = new HoneyBee();
+        // output(bee.doYourJob());
 
 
     }
@@ -24,6 +24,8 @@ public class App {
         output(bee.doYourJob());
         output(bee.fly());
     }
+
+
 
    
     private static void output(String outputStr) {
